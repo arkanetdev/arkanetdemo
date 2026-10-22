@@ -38,7 +38,9 @@ public/assets/    images, client logos and video
 Deployed on Coolify from `main`. The build uses **Railpack**, which runs
 `npm ci` then `npm run build` and serves on port **3000**.
 
-Pushes to `main` deploy automatically via a GitHub webhook.
+Pushes to `main` deploy automatically via a GitHub webhook that calls
+Coolify's manual GitHub endpoint. Coolify's `Auto deploy` setting must stay
+set to "Deploy on push (webhooks)" for this to work.
 
 > `npm ci` requires `package.json` and `package-lock.json` to stay in sync.
 > Update dependencies with `npm install` (not `--legacy-peer-deps`) and commit

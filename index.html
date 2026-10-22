@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkanet Technologies — Websites, Apps &amp; AI Engineered to Perform</title>
+  <meta name="description" content="Arkanet Technologies designs and builds websites, mobile apps, and AI systems made to work under real traffic, real customers, and real deadlines. Based in Kerala.">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+  <!-- 7.1 STICKY HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Logo (Top-Left) -->
+      <a href="#" class="logo">
+        <div class="logo__mark">A</div>
+        <span>Arkanet</span>
+      </a>
+
+      <!-- Desktop Nav: Home · Services · AI Solutions · Pricing · Work · About · Insights · Contact -->
+      <nav class="nav" aria-label="Primary Navigation">
+        <a href="#" class="nav__link nav__link--active">Home</a>
+
+        <!-- Services Mega Menu -->
+        <div class="nav__item">
+          <button class="nav__link" aria-expanded="false">
+            Services
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu mega-menu--services">
+            <div class="mega-menu__content">
+              <div>
+                <div class="mega-menu__col-title">Engineering</div>
+                <ul class="mega-menu__list">
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Website Development</div>
+                      <div class="mega-menu__item-desc">Convert visitors into leads, not just templates.</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Mobile App Development</div>
+                      <div class="mega-menu__item-desc">iOS &amp; Android apps people keep on their phones.</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Portal Development</div>
+                      <div class="mega-menu__item-desc">One log-in for teams, partners &amp; customers.</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="mega-menu__col-title">Design &amp; Growth</div>
+                <ul class="mega-menu__list">
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Graphic Design</div>
+                      <div class="mega-menu__item-desc">Visual identity consistent across all channels.</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Digital Marketing</div>
+                      <div class="mega-menu__item-desc">SEO &amp; paid campaigns tied to real revenue.</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#featured-services" class="mega-menu__item-link">
+                      <div class="mega-menu__item-title">Business Automation</div>
+                      <div class="mega-menu__item-desc">Automated systems replacing repetitive ops work.</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Solutions Mega Menu -->
+        <div class="nav__item">
+          <button class="nav__link" aria-expanded="false">
+            AI Solutions
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu mega-menu--ai">
+            <div class="mega-menu__content">
+              <div class="mega-menu__col-title">Artificial Intelligence</div>
+              <ul class="mega-menu__list">
+                <li>
+                  <a href="#ai-capabilities" class="mega-menu__item-link">
+                    <div class="mega-menu__item-title">Applied AI &amp; ML</div>
+                    <div class="mega-menu__item-desc">Custom models trained on your data.</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#ai-chatbot" class="mega-menu__item-link">
+                    <div class="mega-menu__item-title">Conversational AI &amp; Agents</div>
+                    <div class="mega-menu__item-desc">Real context-aware conversation agents.</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#ai-capabilities" class="mega-menu__item-link">
+                    <div class="mega-menu__item-title">Data Engineering</div>
+                    <div class="mega-menu__item-desc">Pipelines and warehouses turning data into value.</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#ai-capabilities" class="mega-menu__item-link">
+                    <div class="mega-menu__item-title">Legacy Modernisation</div>
+                    <div class="mega-menu__item-desc">Modernise systems without risky rip-and-replace.</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a href="#pricing-teaser" class="nav__link">Pricing</a>
+        <a href="#portfolio-strip" class="nav__link">Work</a>
+        <a href="#our-process" class="nav__link">About</a>
+        <a href="#faq" class="nav__link">Insights</a>
+        <a href="#bookingModal" class="nav__link" data-open-modal="booking">Contact</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="header__right">
+        <button class="header__search-btn" id="headerSearchBtn" aria-label="Search site services">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <!-- Sticky CTA: "Book a Free Call" (opens modal in place) -->
+        <button class="btn btn--primary" data-open-modal="booking">Book a Free Call</button>
+        <button class="header__mobile-toggle" id="mobileNavToggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <a href="#" class="logo">
+        <div class="logo__mark">A</div>
+        <span>Arkanet</span>
+      </a>
+      <button class="header__search-btn" id="mobileNavClose" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav__list">
+      <li><a href="#" class="nav__link">Home</a></li>
+      <li class="mobile-nav__group-title">Services</li>
+      <li><a href="#featured-services" class="nav__link">Website Development</a></li>
+      <li><a href="#featured-services" class="nav__link">Mobile App Development</a></li>
+      <li><a href="#featured-services" class="nav__link">Portal Development</a></li>
+      <li><a href="#featured-services" class="nav__link">Graphic Design</a></li>
+      <li><a href="#featured-services" class="nav__link">Digital Marketing</a></li>
+      <li><a href="#featured-services" class="nav__link">Business Automation</a></li>
+      <li class="mobile-nav__group-title">AI Solutions</li>
+      <li><a href="#ai-capabilities" class="nav__link">Applied AI &amp; Machine Learning</a></li>
+      <li><a href="#ai-chatbot" class="nav__link">Conversational AI &amp; Virtual Agents</a></li>
+      <li class="mobile-nav__group-title">Company</li>
+      <li><a href="#pricing-teaser" class="nav__link">Pricing</a></li>
+      <li><a href="#portfolio-strip" class="nav__link">Work</a></li>
+      <li><a href="#our-process" class="nav__link">About</a></li>
+      <li><a href="#faq" class="nav__link">Insights</a></li>
+      <li><a href="#bookingModal" class="nav__link" data-open-modal="booking">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <button class="btn btn--primary" style="width: 100%;" data-open-modal="booking">Book a Free Call</button>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- 7.2 HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Arkanet Technologies — Kerala &amp; Global
+            </div>
+            <h1 class="hero__headline">Websites, Apps &amp; AI — Engineered to Perform.</h1>
+            <p class="hero__subhead">
+              Arkanet Technologies designs and builds websites, mobile apps, and AI systems made to work under real traffic, real customers, and real deadlines — not just look good in a pitch deck.
+            </p>
+            <p class="hero__supporting">
+              Based in Kerala and built for founders, growing SMEs, and enterprise teams alike, we take a project from first sketch through to production, then stay on as the team that keeps it running and improving.
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn--primary" data-open-modal="booking">Book a Free Call</button>
+              <a href="#portfolio-strip" class="link-btn">See our work →</a>
+            </div>
+
+            <!-- Auto-scrolling Capability Strip -->
+            <div class="tag-marquee" aria-label="Core Capabilities">
+              <div class="tag-marquee__track">
+                <span class="tag-pill">Website builds</span>
+                <span class="tag-pill">Mobile apps</span>
+                <span class="tag-pill">AI chatbots</span>
+                <span class="tag-pill">Business automation</span>
+                <span class="tag-pill">Portal systems</span>
+                <span class="tag-pill">Data pipelines</span>
+                <span class="tag-pill">UI/UX design</span>
+                <span class="tag-pill">Digital marketing</span>
+                <!-- Loop repeat -->
+                <span class="tag-pill">Website builds</span>
+                <span class="tag-pill">Mobile apps</span>
+                <span class="tag-pill">AI chatbots</span>
+                <span class="tag-pill">Business automation</span>
+                <span class="tag-pill">Portal systems</span>
+                <span class="tag-pill">Data pipelines</span>
+                <span class="tag-pill">UI/UX design</span>
+                <span class="tag-pill">Digital marketing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Illustration -->
+          <div class="hero__media">
+            <img src="assets/images/hero-illustration.svg" width="600" height="400" alt="Arkanet System Architecture Illustration" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.3 PORTFOLIO STRIP -->
+    <section class="section section--subtle" id="portfolio-strip" aria-labelledby="portfolioHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Case Studies &amp; Outcomes</div>
+          <h2 id="portfolioHeading">Production Proof &amp; Selected Work</h2>
+        </div>
+
+        <div class="portfolio-row">
+          <a href="#bookingModal" class="portfolio-card reveal-on-scroll" data-open-modal="booking">
+            <div class="portfolio-card__img">
+              <img src="assets/images/portfolio-1.svg" width="400" height="260" alt="Veloce SaaS Booking Engine" loading="lazy">
+            </div>
+            <div class="portfolio-card__title">Veloce SaaS Booking Platform</div>
+            <div class="portfolio-card__result">99.99% Uptime under high booking volume</div>
+          </a>
+
+          <a href="#bookingModal" class="portfolio-card reveal-on-scroll" data-open-modal="booking">
+            <div class="portfolio-card__img">
+              <img src="assets/images/portfolio-2.svg" width="400" height="260" alt="Apex AI Customer Support Agent" loading="lazy">
+            </div>
+            <div class="portfolio-card__title">Apex AI Support Agent</div>
+            <div class="portfolio-card__result">Cut response times &amp; reduced tickets by 50%</div>
+          </a>
+
+          <a href="#bookingModal" class="portfolio-card reveal-on-scroll" data-open-modal="booking">
+            <div class="portfolio-card__img">
+              <img src="assets/images/portfolio-3.svg" width="400" height="260" alt="Nexus Mobile Fintech Portal" loading="lazy">
+            </div>
+            <div class="portfolio-card__title">Nexus Fintech Mobile App</div>
+            <div class="portfolio-card__result">Over 500k active installs across iOS &amp; Android</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.4 FEATURED SERVICES -->
+    <section class="section" id="featured-services" aria-labelledby="servicesHeading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div class="eyebrow">Services Overview</div>
+          <h2 id="servicesHeading">Featured Engineering &amp; Growth Services</h2>
+        </div>
+
+        <div class="services-grid-3col">
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h3 class="service-card__title">Website Development</h3>
+              <p class="service-card__desc">
+                Arkanet designs and builds websites that convert visitors into leads, not just websites that look nice — every project starts with your customer's journey, not a template.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              </div>
+              <h3 class="service-card__title">Mobile App Development</h3>
+              <p class="service-card__desc">
+                From first wireframe to app-store listing, we build iOS and Android apps people actually keep on their phones.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="service-card__title">Portal Development</h3>
+              <p class="service-card__desc">
+                Custom portals that give your team, partners, or customers one place to log in and get work done — replacing scattered spreadsheets and email threads.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+              </div>
+              <h3 class="service-card__title">Graphic Design</h3>
+              <p class="service-card__desc">
+                Visual identity and brand assets that hold up across your website, social channels, and print.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <h3 class="service-card__title">Digital Marketing</h3>
+              <p class="service-card__desc">
+                SEO, paid campaigns, and content strategy built around measurable outcomes — more qualified traffic, more leads.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+
+          <div class="card service-card reveal-on-scroll">
+            <div>
+              <div class="service-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 class="service-card__title">Business Automation</h3>
+              <p class="service-card__desc">
+                We map manual, repetitive workflows and rebuild them as automated systems, freeing your team for work that needs a person.
+              </p>
+            </div>
+            <a href="#bookingModal" class="link-btn" data-open-modal="booking">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.5 OUR PROCESS -->
+    <section class="section section--subtle" id="our-process" aria-labelledby="processHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Our Working Philosophy</div>
+          <h2 id="processHeading">Our Process</h2>
+          <p style="font-size: 1.05rem; color: var(--text-body); margin-top: 12px;">
+            We build technology partnerships designed to last, not projects designed to end at handoff. Every engagement is shaped around one principle: the right technology environment is secure, dependable, and built to your specifications.
+          </p>
+        </div>
+
+        <div class="process-list">
+          <div class="process-step reveal-on-scroll">
+            <div class="process-step__card">
+              <div class="process-step__number">01</div>
+              <h3 class="process-step__title">Understand</h3>
+              <p>We listen closely to your objectives, constraints, and the outcomes that matter most — discovery, not a sales conversation.</p>
+            </div>
+            <div>
+              <img src="assets/images/bento-strategy.svg" width="500" height="280" alt="Discovery &amp; Understanding Phase" loading="lazy" style="border-radius: var(--radius);">
+            </div>
+          </div>
+
+          <div class="process-step process-step--reverse reveal-on-scroll">
+            <div class="process-step__card">
+              <div class="process-step__number">02</div>
+              <h3 class="process-step__title">Architect</h3>
+              <p>We translate that into a defined roadmap: scope, sequencing, and technical decisions before a single line of code is written.</p>
+            </div>
+            <div>
+              <img src="assets/images/portfolio-1.svg" width="500" height="280" alt="Architecture &amp; Roadmapping" loading="lazy" style="border-radius: var(--radius);">
+            </div>
+          </div>
+
+          <div class="process-step reveal-on-scroll">
+            <div class="process-step__card">
+              <div class="process-step__number">03</div>
+              <h3 class="process-step__title">Deliver</h3>
+              <p>Our team executes with transparent, continuous reporting, so you always know where the work stands.</p>
+            </div>
+            <div>
+              <img src="assets/images/portfolio-2.svg" width="500" height="280" alt="Execution &amp; Delivery" loading="lazy" style="border-radius: var(--radius);">
+            </div>
+          </div>
+
+          <div class="process-step process-step--reverse reveal-on-scroll">
+            <div class="process-step__card">
+              <div class="process-step__number">04</div>
+              <h3 class="process-step__title">Sustain</h3>
+              <p>Delivery starts the relationship; we stay engaged through ongoing support, monitoring, and continuous optimisation.</p>
+            </div>
+            <div>
+              <img src="assets/images/portfolio-3.svg" width="500" height="280" alt="Sustain &amp; Long Term Support" loading="lazy" style="border-radius: var(--radius);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.6 MID-PAGE CTA BAND -->
+    <section class="section">
+      <div class="container">
+        <div class="card" style="text-align: center; padding: var(--space-6) var(--space-4);">
+          <h2>Got a project brief? Let's look at it together.</h2>
+          <p style="max-width: 600px; margin: 12px auto 24px auto; font-size: 1.05rem;">
+            Send us a brief or talk with our engineering team directly — we'll give you a real answer right away.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/919074104372" target="_blank" rel="noopener" class="btn btn--whatsapp">Message on WhatsApp</a>
+            <a href="tel:+919074104372" class="btn btn--secondary">Give us a call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.7 BY THE NUMBERS (STATS BAR) -->
+    <section class="section section--subtle" id="statsSection">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div class="eyebrow">Track Record</div>
+          <h2>By the Numbers</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number" data-target="40" data-suffix="+">0</div>
+            <div class="stat-item__label">Projects Delivered</div>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 4px;">Shipped to production, not just prototyped</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__number" data-target="6" data-suffix=" Domains">0</div>
+            <div class="stat-item__label">Technology Domains</div>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 4px;">Web, mobile, portals, automation, data, AI</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__number" data-target="2" data-prefix="<" data-suffix=" hrs">0</div>
+            <div class="stat-item__label">Average First Response</div>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 4px;">Typical reply time on enquiries</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__number" data-target="90" data-suffix="%">0</div>
+            <div class="stat-item__label">Client Retention</div>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 4px;">Clients on repeat projects or retainers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.8 DIGITAL & AI CAPABILITIES -->
+    <section class="section" id="ai-capabilities" aria-labelledby="aiCapHeading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Advanced Engineering</div>
+          <h2 id="aiCapHeading">Digital &amp; AI Capabilities</h2>
+        </div>
+
+        <div class="services-grid-3col">
+          <div class="card reveal-on-scroll">
+            <h3>Technology Strategy &amp; Roadmapping</h3>
+            <p>We help decide what to build and in what order, so spend maps directly to a business outcome.</p>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3>Applied AI &amp; Machine Learning</h3>
+            <p>Custom models trained on your data, evaluated against your actual business metric.</p>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3>Conversational AI &amp; Virtual Agents</h3>
+            <p>Language-model-based assistants that hold a real conversation and hand off to a human only when needed.</p>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3>Data Engineering &amp; Analytics</h3>
+            <p>Pipelines and warehouses that turn scattered data into something your team can query and trust.</p>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3>Legacy System Modernisation</h3>
+            <p>Modernising ageing systems that still run your business, without a risky rip-and-replace.</p>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3>Product &amp; UI/UX Design</h3>
+            <p>Interfaces designed around real user behaviour, tested before a line of production code is written.</p>
+          </div>
+
+          <div class="card reveal-on-scroll" style="grid-column: span 1;">
+            <h3>Full-Stack App Development</h3>
+            <p>Web, mobile, and desktop applications on a single, maintainable codebase wherever that's the right call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.9 AI CHATBOT & VIRTUAL AGENTS -->
+    <section class="section section--subtle" id="ai-chatbot">
+      <div class="container">
+        <div class="chatbot-highlight reveal-on-scroll">
+          <div class="eyebrow eyebrow--on-dark">Proprietary Platform</div>
+          <h2>AI Chatbot &amp; Virtual Agents</h2>
+          <p>
+            Arkanet's chatbot platform handles real conversations, not decision trees. Built on modern language models, it understands intent, holds context, and hands off to a human only when it genuinely needs to. Deploy it on your website, WhatsApp, or as an internal helpdesk assistant, and cut response times without growing your support headcount.
+          </p>
+          <div style="margin-top: 24px;">
+            <button class="btn btn--primary" data-open-modal="booking">Request Chatbot Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.10 INDUSTRIES WE SERVE -->
+    <section class="section" id="industries" aria-labelledby="industriesHeading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div class="eyebrow">Domain Expertise</div>
+          <h2 id="industriesHeading">Industries We Serve</h2>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-pill">Retail &amp; E-commerce</div>
+          <div class="industry-pill">Healthcare</div>
+          <div class="industry-pill">Education</div>
+          <div class="industry-pill">Hospitality</div>
+          <div class="industry-pill">Public Sector &amp; Government</div>
+          <div class="industry-pill">Transportation &amp; Logistics</div>
+          <div class="industry-pill">Professional Services</div>
+          <div class="industry-pill">Consumer Products</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.11 NEW CLIENTS (CAROUSEL) -->
+    <section class="section section--subtle" id="client-logos">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div class="eyebrow">Client Network</div>
+          <h2>Trusted by Growing Teams</h2>
+        </div>
+
+        <div class="client-carousel">
+          <div class="client-logo-box">APEX LABS</div>
+          <div class="client-logo-box">VELOCE TECH</div>
+          <div class="client-logo-box">NEXUS HEALTH</div>
+          <div class="client-logo-box">COBALT SYSTEMS</div>
+          <div class="client-logo-box">CREST ANALYTICS</div>
+          <div class="client-logo-box">HORIZON MEDIA</div>
+          <div class="client-logo-box">LUMINA AI</div>
+          <div class="client-logo-box">STRATA GLOBAL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.12 CERTIFICATION & NEWSLETTER BAND -->
+    <section class="section">
+      <div class="container">
+        <div class="cert-news-band reveal-on-scroll">
+          <div>
+            <div class="eyebrow" style="margin-bottom: 8px;">Quality Certified</div>
+            <h3 style="margin-bottom: 12px;">ISO Certified Standards</h3>
+            <div class="badge-stack">
+              <span class="cert-badge">ISO 9001:2015</span>
+              <span class="cert-badge">IAF ACCREDITED</span>
+              <span class="cert-badge">EGAC CERTIFIED</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 8px;">Join Our Newsletter</h3>
+            <p style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 16px;">
+              Get occasional insights on software engineering, AI deployment, and tech roadmaps.
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" class="newsletter-input" placeholder="Enter your work email..." required>
+              <button type="submit" class="btn btn--primary">Subscribe</button>
+            </form>
+            <div id="newsletterSuccess" style="display: none; color: #10b981; font-weight: 600; font-size: 0.9rem; margin-top: 10px;">
+              ✓ Thanks for subscribing! You are on the list.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.13 FAQ ACCORDION -->
+    <section class="section section--subtle" id="faq" aria-labelledby="faqHeading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div class="eyebrow">Clear Answers</div>
+          <h2 id="faqHeading">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-summary">How much does a website or app cost?</summary>
+            <div class="faq-content">
+              Every plan starts with a free consultation and a written estimate — see Pricing for indicative ranges.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">How long does a typical project take?</summary>
+            <div class="faq-content">
+              A standard website takes a few weeks; AI/app timelines are confirmed after Step 2 of Our Process.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">One-off project or ongoing support?</summary>
+            <div class="faq-content">
+              Both — a one-time build, or a subscription plan with real engineering time, not a ticket queue.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Can you work with a business outside India?</summary>
+            <div class="faq-content">
+              Yes — pricing shown in INR and USD, consultations scheduled across time zones.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">What happens after launch?</summary>
+            <div class="faq-content">
+              We stay on as your long-term technology partner for monitoring, maintenance, and improvements.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.14 PRICING TEASER -->
+    <section class="section" id="pricing-teaser">
+      <div class="container">
+        <div class="pricing-teaser reveal-on-scroll">
+          <div class="eyebrow" style="margin-bottom: 8px;">Transparent Value</div>
+          <h2 style="margin-bottom: 12px;">Pay for a partner, not a project quote.</h2>
+          <p style="max-width: 600px; margin: 0 auto 24px auto; font-size: 1.05rem;">
+            Choose a subscription that scales with you, from a single AI pilot to a full engineering team on retainer.
+          </p>
+          <button class="btn btn--primary" data-open-modal="booking">See Plans &amp; Pricing</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7.15 FINAL CTA -->
+    <section class="section section--navy closing-cta">
+      <div class="container">
+        <h2 style="color: #ffffff; margin-bottom: 12px;">Have something in mind?</h2>
+        <p style="color: var(--text-on-navy-muted); font-size: 1.1rem; max-width: 580px; margin: 0 auto 32px auto;">
+          Send us a brief, a sketch, or just a problem you haven't solved yet — we'll tell you plainly whether AI or a rebuild is the right call.
+        </p>
+        <button class="btn btn--primary" data-open-modal="booking">Book a Free Call</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7.16 FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Logo & Address -->
+        <div>
+          <a href="#" class="logo" style="color: #ffffff; margin-bottom: 16px;">
+            <div class="logo__mark" style="background-color: var(--navy-bright);">A</div>
+            <span>Arkanet</span>
+          </a>
+          <p style="font-size: 0.95rem; line-height: 1.6; max-width: 340px;">
+            Arkanet Technologies — websites, apps, and AI systems engineered to perform under real traffic and deadlines.
+          </p>
+
+          <!-- Office Details Card -->
+          <div class="footer-office-card">
+            <strong>India (Arkanet Technologies)</strong><br>
+            Room No. 227K, Benny Complex, Kelakam,<br>
+            Kannur Dt, Kerala<br>
+            Phone: <a href="tel:+919074104372" style="color: #60a5fa;">+91 90741 04372</a><br>
+            Email: <a href="mailto:info@arkanet.in" style="color: #60a5fa;">info@arkanet.in</a>
+          </div>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="footer__links-grid">
+          <div>
+            <div class="footer__col-title">Services</div>
+            <ul class="footer__list">
+              <li><a href="#featured-services" class="footer__link">Website Development</a></li>
+              <li><a href="#featured-services" class="footer__link">Mobile App Dev</a></li>
+              <li><a href="#featured-services" class="footer__link">Portal Development</a></li>
+              <li><a href="#featured-services" class="footer__link">Graphic Design</a></li>
+              <li><a href="#featured-services" class="footer__link">Digital Marketing</a></li>
+              <li><a href="#featured-services" class="footer__link">Business Automation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer__col-title">AI Solutions</div>
+            <ul class="footer__list">
+              <li><a href="#ai-capabilities" class="footer__link">Applied AI &amp; ML</a></li>
+              <li><a href="#ai-chatbot" class="footer__link">Conversational AI</a></li>
+              <li><a href="#ai-capabilities" class="footer__link">Data Engineering</a></li>
+              <li><a href="#ai-capabilities" class="footer__link">Legacy Systems</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer__col-title">Company</div>
+            <ul class="footer__list">
+              <li><a href="#our-process" class="footer__link">About Us</a></li>
+              <li><a href="#portfolio-strip" class="footer__link">Work</a></li>
+              <li><a href="#faq" class="footer__link">Insights</a></li>
+              <li><a href="#bookingModal" class="footer__link" data-open-modal="booking">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer__col-title">Legal &amp; Social</div>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms of Service</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="footer__link">LinkedIn ↗</a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noopener" class="footer__link">X / Twitter ↗</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <span>© <span data-current-year>2026</span> Arkanet Technologies. All rights reserved.</span>
+        <span>Kerala, India &amp; Global Engineering</span>
+      </div>
+    </div>
+  </footer
+
+  <!-- BOOKING MODAL DIALOG -->
+  <dialog class="modal-dialog" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal aria-label="Close dialog">✕</button>
+      <div id="bookingFormContainer">
+        <h3 style="margin-bottom: 8px;">Book a Free Scope Call</h3>
+        <p style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 20px;">
+          Select a time for a 15-minute technical discovery call with our lead engineering team.
+        </p>
+
+        <form id="bookingForm">
+          <div class="form-group">
+            <label class="form-label" for="clientName">Full Name</label>
+            <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientEmail">Work Email</label>
+            <input type="email" id="clientEmail" name="email" class="form-input" placeholder="sarah@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="projectBrief">Project Summary</label>
+            <textarea id="projectBrief" name="brief" rows="3" class="form-textarea" placeholder="Tell us briefly what you're looking to build..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%;">Submit Request</button>
+        </form>
+
+        <div id="bookingSuccess" style="display: none; text-align: center; padding: 24px 0;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" style="margin: 0 auto 12px auto;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h4 style="margin-bottom: 8px;">Request Received!</h4>
+          <p style="font-size: 0.9rem; color: var(--text-body);">We will review your brief and follow up via email within 2 business hours.</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- SEARCH OVERLAY DIALOG -->
+  <dialog class="modal-dialog search-dialog" id="searchModal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal aria-label="Close search">✕</button>
+      <h3 style="margin-bottom: 12px;">Search Arkanet Services</h3>
+      <input type="search" id="searchInput" class="form-input" placeholder="Type a service name (e.g. Website, App, AI, Portal)..." autocomplete="off">
+      <ul class="search-results" id="searchResults"></ul>
+    </div>
+  </dialog>
+
+  <!-- Application Logic -->
+  <script src="main.js" defer></script>
+</body>
+</html>

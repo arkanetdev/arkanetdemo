@@ -1,0 +1,235 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    @apply bg-[#f4f6fb] text-navy font-sans antialiased selection:bg-navy-bright selection:text-white;
+  }
+
+  h1 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: 1.875rem; /* 30px - text-3xl */
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: #0b1330;
+  }
+
+  @media (min-width: 640px) {
+    h1 {
+      font-size: 3.75rem; /* 60px - sm:text-6xl */
+      line-height: 1.05;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 104px; /* lg:text-[104px] */
+      line-height: 1.02;
+    }
+  }
+
+  h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #0b1330;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    @apply tracking-tight text-navy font-bold;
+  }
+}
+
+@layer components {
+  /* Homepage Hero H1 style set globally for all page hero titles */
+  .hero-h1 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: 1.875rem; /* 30px - text-3xl */
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: inherit;
+  }
+
+  @media (min-width: 640px) {
+    .hero-h1 {
+      font-size: 3.75rem; /* 60px - sm:text-6xl */
+      line-height: 1.05;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-h1 {
+      font-size: 104px; /* lg:text-[104px] */
+      line-height: 1.02;
+    }
+  }
+
+  /* Dedicated Showcase Video Headline Style (independent from hero-h1) */
+  .showcase-heading {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(29px, 4.57vw, 95px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    color: inherit;
+  }
+
+  .section-h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #0b1330;
+  }
+
+  .bento-section-h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #0b1330;
+  }
+
+  /* Custom 20% larger section heading specifically for People-First, Problem-Solvers section */
+  .philosophy-h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #0b1330;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(12px, 1.2vw, 15px);
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    color: #0284c7;
+  }
+
+  .hero-sub {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(16px, 1.8vw, 24px);
+    font-weight: 500;
+    line-height: 1.6;
+    color: #0b1330;
+  }
+
+  /* About statement paragraph — 25% increased font size */
+  .about-statement {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(21px, 2.5vw, 30px);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.015em;
+    color: #1e293b;
+  }
+
+  /* About section titles — 25% reduced font size */
+  .about-h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(19px, 3.16vw, 45px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: #070035;
+  }
+
+  .card-h3 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Capability Carousel Cards Typography (WhatsNewSection) */
+  .capability-card-title {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(20px, 2.2vw, 32px);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .capability-card-desc {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(16px, 1.2vw, 18px);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .body-main {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.25vw, 18px);
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .body-sm {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Global Modal Shared Typography Tokens (matching Article & Work modals) */
+  .modal-hero-h1 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(30px, 4vw, 62px);
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+  }
+
+  .modal-hero-sub {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(16px, 1.8vw, 20px);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .modal-section-h2 {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif;
+    font-size: clamp(21px, 3.15vw, 40px);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+  }
+
+  .modal-body-p {
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(16px, 1.6vw, 20px);
+    font-weight: 400;
+    line-height: 1.65;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif !important;
+  }
+  .font-heading {
+    font-family: var(--font-heading), 'Figtree', 'Figtree Fallback', sans-serif !important;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+    }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }
+}

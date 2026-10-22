@@ -34,3 +34,7 @@ next-env.d.ts
 # Agent Skills
 .agents/
 skills-lock.json
+
+# Source archive
+arkanet-main.zip
+*.zip

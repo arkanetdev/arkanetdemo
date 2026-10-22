@@ -1,0 +1,27 @@
+<svg width="400" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="260" rx="12" fill="#F4F6FA"/>
+  <rect x="20" y="20" width="360" height="220" rx="8" fill="#0B1F3A"/>
+  
+  <rect x="40" y="40" width="320" height="40" rx="6" fill="#16345F"/>
+  <text x="56" y="64" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">AI Intake &amp; Dispatcher Agent</text>
+  <circle cx="340" cy="60" r="6" fill="#10B981"/>
+
+  <g transform="translate(40, 95)">
+    <rect x="0" y="0" width="95" height="110" rx="6" fill="#1E293B" stroke="#1D4ED8"/>
+    <text x="10" y="24" fill="#94A3B8" font-family="sans-serif" font-size="9">STEP 1</text>
+    <text x="10" y="44" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">NLP Ticket Parsing</text>
+    <rect x="10" y="70" width="75" height="4" rx="2" fill="#1D4ED8"/>
+    <text x="10" y="92" fill="#10B981" font-family="sans-serif" font-size="10">Auto-classified</text>
+
+    <rect x="112" y="0" width="95" height="110" rx="6" fill="#1E293B" stroke="#1D4ED8"/>
+    <text x="122" y="24" fill="#94A3B8" font-family="sans-serif" font-size="9">STEP 2</text>
+    <text x="122" y="44" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">LLM Context Match</text>
+    <rect x="122" y="70" width="75" height="4" rx="2" fill="#1D4ED8"/>
+    <text x="122" y="92" fill="#60A5FA" font-family="sans-serif" font-size="10">Vector DB Query</text>
+
+    <rect x="225" y="0" width="95" height="110" rx="6" fill="#1D4ED8"/>
+    <text x="235" y="24" fill="#E0F2FE" font-family="sans-serif" font-size="9">RESULT</text>
+    <text x="235" y="44" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">-50% Resolution Time</text>
+    <text x="235" y="92" fill="#FFFFFF" font-family="sans-serif" font-size="10">Auto-Resolved</text>
+  </g>
+</svg>

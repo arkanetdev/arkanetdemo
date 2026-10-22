@@ -1,0 +1,33 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="340" rx="12" fill="#0B1F3A"/>
+  <path d="M0 40H600M0 80H600M0 120H600M0 160H600M0 200H600M0 240H600M0 280H600" stroke="#16345F" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M60 0V340M120 0V340M180 0V340M240 0V340M300 0V340M360 0V340M420 0V340M480 0V340M540 0V340" stroke="#16345F" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <g transform="translate(40, 40)">
+    <rect x="20" y="30" width="130" height="70" rx="8" fill="#16345F" stroke="#1D4ED8" stroke-width="2"/>
+    <text x="35" y="60" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Phase 01</text>
+    <text x="35" y="80" fill="#AAB4C8" font-family="sans-serif" font-size="11">Architecture Scope</text>
+
+    <path d="M150 65 H200" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle cx="200" cy="65" r="4" fill="#1D4ED8"/>
+
+    <rect x="204" y="30" width="140" height="70" rx="8" fill="#16345F" stroke="#1D4ED8" stroke-width="2"/>
+    <text x="219" y="60" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Phase 02</text>
+    <text x="219" y="80" fill="#AAB4C8" font-family="sans-serif" font-size="11">Tech Stack &amp; APIs</text>
+
+    <path d="M344 65 H394" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle cx="394" cy="65" r="4" fill="#1D4ED8"/>
+
+    <rect x="398" y="30" width="120" height="70" rx="8" fill="#1D4ED8" stroke="#60A5FA" stroke-width="2"/>
+    <text x="413" y="60" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Phase 03</text>
+    <text x="413" y="80" fill="#E0F2FE" font-family="sans-serif" font-size="11">Production Scale</text>
+
+    <rect x="20" y="140" width="498" height="100" rx="8" fill="#071527" stroke="#16345F"/>
+    <path d="M40 210 Q 140 160, 240 190 T 480 150" fill="none" stroke="#1D4ED8" stroke-width="3"/>
+    <circle cx="140" cy="170" r="5" fill="#60A5FA"/>
+    <circle cx="240" cy="190" r="5" fill="#60A5FA"/>
+    <circle cx="360" cy="165" r="5" fill="#60A5FA"/>
+    <circle cx="480" cy="150" r="6" fill="#1D4ED8" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="40" y="160" fill="#8891A3" font-family="sans-serif" font-size="10">Roadmap Velocity</text>
+  </g>
+</svg>

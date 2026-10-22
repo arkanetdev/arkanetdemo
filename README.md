@@ -42,10 +42,11 @@ Pushes to `main` deploy automatically via a GitHub webhook that calls
 Coolify's manual GitHub endpoint. Coolify's `Auto deploy` setting must stay
 set to "Deploy on push (webhooks)" for this to work.
 
-> The GitHub webhook's secret must match Coolify's *Manual Git webhooks →
-> GitHub* secret. Coolify answers `200` even when it rejects a delivery, so a
-> green tick in GitHub does not mean a deploy ran — check the response body
-> for `invalid signature` if pushes stop deploying.
+> The GitHub webhook and Coolify's *Manual Git webhooks → GitHub* secret must
+> match. Both are currently unset, so deliveries are unsigned and Coolify
+> accepts any well-formed push payload for this app. Coolify answers `200`
+> even when it rejects a delivery, so a green tick in GitHub does not mean a
+> deploy ran — check the response body for `invalid signature`.
 
 > `npm ci` requires `package.json` and `package-lock.json` to stay in sync.
 > Update dependencies with `npm install` (not `--legacy-peer-deps`) and commit

@@ -6,18 +6,19 @@ import Image from "next/image";
 export const WorkHero: React.FC = () => {
   return (
     <section className="relative w-full min-h-screen min-h-[100dvh] pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-16 px-4 sm:px-8 lg:px-12 bg-white border-b border-slate-200/80 text-left select-none overflow-hidden font-sans flex flex-col justify-center">
-      {/* ── CINEMATIC AMBIENT BACKGROUND: MULTI-DEVICE DIGITAL PLATFORMS ── */}
+      {/* ── CINEMATIC AMBIENT BACKGROUND: HIGH-RES ARCHITECTURAL ENGINEERING STUDIO ── */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <Image
-          src="/assets/images/work-multidevice-hero.png"
+          src="/assets/images/work-hero-studio.webp"
           alt="Arkanet Digital Platforms & Multi-Device Engineering Portfolio"
           fill
           priority
+          quality={95}
           sizes="100vw"
-          className="object-cover object-right opacity-50 sm:opacity-60 lg:opacity-65 brightness-[1.02] contrast-[1.04]"
+          className="object-cover object-center sm:object-right-top opacity-60 sm:opacity-70 brightness-[1.03] contrast-[1.05] saturate-[1.06]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 sm:via-white/70 to-white/40 sm:to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/30 pointer-events-none" />
       </div>
 
       <div className="relative z-10 max-w-[1400px] w-full mx-auto my-auto space-y-6">
